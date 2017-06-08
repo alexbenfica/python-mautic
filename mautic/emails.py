@@ -43,17 +43,6 @@ class Emails(API):
 
         :param parameters: dictionary with each parameter from this list https://developer.mautic.org/#create-email
         :return: dict|str
-        """
-        
+        """        
         response = self.create(parameters)
-        
-        import pprint
-        pprint.pprint(response)
-        exit()        
         return self.process_response(response)
-
-
-
-
-
-
